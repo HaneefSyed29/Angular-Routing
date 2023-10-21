@@ -12,8 +12,14 @@
 <br />
 <a routerLink="user/40">Sahil</a>
 
+<router-outlet></router-outlet>
+
+<ul >
+    <li *ngFor="let val of user">{{val.name && val.email}}</li>
+</ul>
+
 <!-- what is services  -->
 
 <!-- services is a block of code in which different functionality can be done by some code  -->
 
-<router-outlet></router-outlet>
+<app-footer></app-footer>
